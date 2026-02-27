@@ -7,10 +7,14 @@ const app = express();
 app.use((req, res, next) => {
     const origin = req.headers.origin;
 
-    // Allow null origin (file://) or any localhost / 127.0.0.1
+    // Allow:
+    // - null origin (file://)
+    // - localhost / 127.0.0.1
+    // - any Vercel domain (*.vercel.app)
     const allowed =
         !origin ||
-        /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin);
+        /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin) ||
+        /^https:\/\/.*\.vercel\.app$/.test(origin);
 
     if (allowed) {
         res.setHeader("Access-Control-Allow-Origin", origin || "*");
@@ -18,7 +22,7 @@ app.use((req, res, next) => {
         res.setHeader("Access-Control-Allow-Headers", "Content-Type");
     }
 
-    // Answer preflight immediately
+    // Handle preflight
     if (req.method === "OPTIONS") {
         return res.sendStatus(204);
     }
