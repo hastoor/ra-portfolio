@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="assets/svg/ra_poppins_black.svg" media="(prefers-color-scheme: light)" rel="icon" type="image/svg+xml"/>
+<link href="assets/svg/ra_poppins_white.svg" media="(prefers-color-scheme: dark)" rel="icon" type="image/svg+xml"/>
+<title>Rakhmanov Akram — Web Developer</title>
+</head>
+<body>
+<!-- HEADER -->
+<header>
+<div class="header__inner">
+<div class="logo"><img alt="RA svg logotype" src="assets/svg/ra_poppins_white.svg"/></div>
+<nav>
+<ul>
+<li><a data-cursor-color="#FFFFFF" data-i18n="nav_services" href="#section__services">Services</a></li>
+<li><a data-cursor-color="#FFFFFF" data-i18n="nav_portfolio" href="#section__portfolio__projects">Portfolio</a></li>
+<li><a data-cursor-color="#FFFFFF" data-i18n="nav_about" href="#section__about">About</a></li>
+<li><a data-cursor-color="#FFFFFF" data-i18n="nav_contact" href="#contact__me">Contact</a></li>
+</ul>
+</nav>
+<div class="lang" id="lang">
+<button aria-expanded="false" aria-haspopup="menu" class="lang__btn" id="langBtn" type="button">
+<span class="lang__code" id="langCode">EN</span>
+<span aria-hidden="true" class="lang__flag" id="langFlag">
+<img alt="" height="15" src="https://flagcdn.com/20x15/us.png" width="20"/>
+</span>
+<span class="lang__label" id="langLabel">English</span>
+<span aria-hidden="true" class="lang__chev">▾</span>
+</button>
+<div aria-label="Language" class="lang__menu" id="langMenu" role="menu">
+<button class="lang__item" data-lang="ru" role="menuitem" type="button">
+<span class="lang__code">RU</span>
+<span aria-hidden="true" class="lang__flag">
+<img alt="Russia flag" height="15" src="https://flagcdn.com/20x15/ru.png" width="20"/>
+</span>
+<span class="lang__text">Русский</span>
+</button>
+<button class="lang__item" data-lang="en" role="menuitem" type="button">
+<span class="lang__code">EN</span>
+<span aria-hidden="true" class="lang__flag">
+<img alt="US flag" height="15" src="https://flagcdn.com/20x15/us.png" width="20"/>
+</span>
+<span class="lang__text">English</span>
+</button>
+</div>
+</div>
+<button class="btn btn--small open-modal" data-cursor-color="#FDC435" data-i18n="hire_me" data-i18n-html="hire_me" data-modal="modal__order__window">Hire Me</button>
+<button aria-label="Menu" class="burger" id="burger">
+<span></span><span></span><span></span>
+</button>
+</div>
+<!-- Mobile nav -->
+<div class="mobile__nav" id="mobile__nav">
+<ul>
+<li><a class="mobile__nav__link" data-cursor-color="#FFFFFF" data-i18n="nav_services" href="#section__services">Services</a></li>
+<li><a class="mobile__nav__link" data-cursor-color="#FFFFFF" data-i18n="nav_portfolio" href="#section__portfolio__projects">Portfolio</a></li>
+<li><a class="mobile__nav__link" data-cursor-color="#FFFFFF" data-i18n="nav_about" href="#section__about">About</a></li>
+<li><a class="mobile__nav__link" data-cursor-color="#FFFFFF" data-i18n="nav_contact" href="#contact__me">Contact</a></li>
+</ul>
+<div class="lang" id="langMobile">
+<button aria-expanded="false" aria-haspopup="menu" class="lang__btn" id="langBtnMobile" type="button">
+<span class="lang__code" id="langCodeMobile">EN</span>
+<span aria-hidden="true" class="lang__flag" id="langFlagMobile">
+<img alt="" height="15" src="https://flagcdn.com/20x15/us.png" width="20"/>
+</span>
+<span class="lang__label" id="langLabelMobile">English</span>
+<span aria-hidden="true" class="lang__chev">▾</span>
+</button>
+<div aria-label="Language" class="lang__menu" id="langMenuMobile" role="menu">
+<button class="lang__item" data-lang="ru" role="menuitem" type="button">
+<span class="lang__code">RU</span>
+<span aria-hidden="true" class="lang__flag">
+<img alt="Russia flag" height="15" src="https://flagcdn.com/20x15/ru.png" width="20"/>
+</span>
+<span class="lang__text">Русский</span>
+</button>
+<button class="lang__item" data-lang="en" role="menuitem" type="button">
+<span class="lang__code">EN</span>
+<span aria-hidden="true" class="lang__flag">
+<img alt="US flag" height="15" src="https://flagcdn.com/20x15/us.png" width="20"/>
+</span>
+<span class="lang__text">English</span>
+</button>
+</div>
+</div>
+<button class="btn open-modal" data-cursor-color="#FDC435" data-i18n="hire_me" data-i18n-html="hire_me" data-modal="modal__order__window">Hire Me</button>
+</div>
+</header>
+<main>
+<!-- HERO -->
+<section class="hero__section">
+<div id="hero">
+<div id="hero__img">
+<div class="hero__img__wrapper">
+<img alt="Rakhmanov Akram" src="assets/img/akram.webp"/>
+</div>
+<div class="hero__badge" data-i18n="open_to_work">Open to Work</div>
+</div>
+<div id="hero__description">
+<span class="hero__tag" data-i18n="hero_tag">Web Developer</span>
+<h1><span data-i18n="hero_h1_prefix">Hi, I am</span> <span id="hero__span">Rakhmanov<br/>Akram</span></h1>
+<h2 data-i18n="hero_h2">I build fast &amp; conversion‑focused websites for businesses</h2>
+<p data-i18n="hero_p">Modern, responsive, and performance-optimized web solutions designed to turn visitors into clients.</p>
+<div class="hero__cta">
+<button class="btn open-modal" data-cursor-color="#FDC435" data-i18n-html="cta_discuss_html" data-modal="modal__order__window">Discuss <span>Your</span> Project</button>
+<a class="btn btn--outline" data-cursor-color="#FFFFFF" data-i18n="cta_learn" href="#section__about">Learn More</a>
+</div>
+</div>
+</div>
+<!-- <div class="hero__scroll">
+				<span>Scroll</span>
+				<div class="scroll__line"></div>
+			</div> -->
+</section>
+<!-- SERVICES -->
+<section class="services__section" id="section__services">
+<div class="section__header">
+<span class="section__tag" data-i18n="services_tag">What You Get</span>
+<h2 data-i18n="services_title">Services</h2>
+</div>
+<div class="services__grid">
+<div class="service__card" data-sr="">
+<div class="service__icon">⚡</div>
+<h3 data-i18n="services_card1_title"><i class="ri-flashlight-fill service__icon--mobile"></i>Modern Responsive Design</h3>
+<p data-i18n="services_card1_desc">Your website works flawlessly on all devices and screen sizes — from phones to ultra-wide monitors.</p>
+</div>
+<div class="service__card" data-sr="">
+<div class="service__icon">🚀</div>
+<h3 data-i18n="services_card2_title"><i class="ri-rocket-2-fill service__icon--mobile"></i>High Performance</h3>
+<p data-i18n="services_card2_desc">Optimized code and assets for blazing fast loading speeds and top Lighthouse scores.</p>
+</div>
+<div class="service__card" data-sr="">
+<div class="service__icon">🏗</div>
+<h3 data-i18n="services_card3_title"><i class="ri-layout-masonry-fill service__icon--mobile"></i>Clean Architecture</h3>
+<p data-i18n="services_card3_desc">Structured and scalable codebase that is maintainable, readable, and future-proof.</p>
+</div>
+<div class="service__card" data-sr="">
+<div class="service__icon">🔗</div>
+<h3 data-i18n="services_card4_title"><i class="ri-links-fill service__icon--mobile"></i>Integrations &amp; Forms</h3>
+<p data-i18n="services_card4_desc">Contact forms, CRM integrations, analytics setup, and full deployment support.</p>
+</div>
+</div>
+</section>
+<!-- PORTFOLIO -->
+<section id="section__portfolio__projects">
+<div class="section__header">
+<span class="section__tag" data-i18n="portfolio_tag">My Work</span>
+<h2 data-i18n="portfolio_title">Portfolio</h2>
+</div>
+<div class="portfolio__grid">
+<!-- 1. Fleet Management -->
+<div class="portfolio__card" data-sr="">
+<div class="portfolio__thumb portfolio__thumb--1"></div>
+<div class="portfolio__info">
+<h3>Fleet Management System</h3>
+<p>Vehicle, driver and finance tracking system with DOCX reports.</p>
+<span class="tech__tag">HTML</span><span class="tech__tag">JS</span><span class="tech__tag">Chart.js</span>
+</div>
+</div>
+<!-- 2. Clinic CRM -->
+<div class="portfolio__card" data-sr="">
+<div class="portfolio__thumb portfolio__thumb--2"></div>
+<div class="portfolio__info">
+<h3>Clinic CRM</h3>
+<p>Patient and appointment management system for a medical clinic.</p>
+<span class="tech__tag">HTML</span><span class="tech__tag">CSS</span><span class="tech__tag">JS</span>
+</div>
+</div>
+<!-- 3. Pharma ERP -->
+<div class="portfolio__card" data-sr="">
+<div class="portfolio__thumb portfolio__thumb--3"></div>
+<div class="portfolio__info">
+<h3>Pharma ERP</h3>
+<p>End-to-end pharmaceutical warehouse ERP with FEFO inventory.</p>
+<span class="tech__tag">JS</span><span class="tech__tag">SPA</span><span class="tech__tag">localStorage</span>
+</div>
+</div>
+<!-- 4. School ERP -->
+<div class="portfolio__card" data-sr="">
+<div class="portfolio__thumb portfolio__thumb--4"></div>
+<div class="portfolio__info">
+<h3>School ERP</h3>
+<p>Role-based ERP for schools: students, staff, grades and attendance.</p>
+<span class="tech__tag">JS</span><span class="tech__tag">CSS</span><span class="tech__tag">Remixicon</span>
+</div>
+</div>
+<!-- 5. Goods Shop -->
+<div class="portfolio__card" data-sr="">
+<div class="portfolio__thumb portfolio__thumb--5"></div>
+<div class="portfolio__info">
+<h3>Mini ERP — Retail Store</h3>
+<p>Compact retail ERP with cashier POS and expiry-aware warehouse.</p>
+<span class="tech__tag">HTML</span><span class="tech__tag">CSS</span><span class="tech__tag">JS</span>
+</div>
+</div>
+<!-- 6. Clothes Shop -->
+<div class="portfolio__card" data-sr="">
+<div class="portfolio__thumb portfolio__thumb--6"></div>
+<div class="portfolio__info">
+<h3>VESTO — Online Clothes Store</h3>
+<p>Full-featured clothing store with catalog, cart, filters and checkout.</p>
+<span class="tech__tag">HTML</span><span class="tech__tag">JS</span><span class="tech__tag">Webpack</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT -->
+<section id="section__about">
+<div class="about__inner">
+<div class="about__text" data-sr="">
+<div class="section__header">
+<span class="section__tag" data-i18n="about_tag">Who I Am</span>
+<h2 data-i18n="about_title">About Me</h2>
+</div>
+<p data-i18n="about_p1">I am a web developer specializing in modern, high-performance websites. I work with small and medium-sized businesses to create structured, scalable, and reliable web solutions.</p>
+<p data-i18n="about_p2">I value clean code, transparent communication, and meeting deadlines. Every project gets my full attention — from design to deployment.</p>
+</div>
+<div class="skills__block" data-sr="">
+<div class="section__header">
+<span class="section__tag" data-i18n="skills_tag">Tech Stack</span>
+<h2 data-i18n="skills_title">Expertise</h2>
+</div>
+<div class="skill__row">
+<h3 data-i18n="skills_frontend_h">Frontend</h3>
+<p data-i18n="skills_frontend_p">HTML5, CSS3, JavaScript, responsive development, performance optimization</p>
+</div>
+<div class="skill__row">
+<h3 data-i18n="skills_tools_h">Tools</h3>
+<p data-i18n="skills_tools_p">Git, Figma, Vite / Webpack, API integration</p>
+</div>
+<div class="skill__row">
+<h3 data-i18n="skills_additional_h">Additional</h3>
+<p data-i18n="skills_additional_p">Basic SEO setup, form configuration, deployment</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT CTA -->
+<section id="contact__me">
+<div class="cta__inner" data-sr="">
+<h2>Ready to build something great?</h2>
+<p>Let's turn your idea into a fast, polished, client-winning website.</p>
+<button class="btn btn--large open-modal" data-cursor-color="#FDC435" data-i18n-html="hire_me" data-modal="modal__order__window">Let's Build <span>Your</span> Project!</button>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer>
+<div class="footer__inner">
+<div class="logo"><img alt="RA svg logotype" src="assets/svg/ra_poppins_white.svg"/></div>
+<ul class="footer__links">
+<li><a href="https://linkedin.com" target="_blank"><i class="ri-linkedin-fill"></i><span class="link__text">LinkedIn</span></a></li>
+<li><a href="https://t.me/hastiel" target="_blank"><i class="ri-telegram-fill"></i><span class="link__text">Telegram</span></a></li>
+<li><a href="https://wa.me/" target="_blank"><i class="ri-whatsapp-fill"></i><span class="link__text">WhatsApp</span></a></li>
+<li><a href="https://github.com/hastoor" target="_blank"><i class="ri-github-fill"></i><span class="link__text">GitHub</span></a></li>
+</ul>
+<!--			<p class="footer__copy">© 2025 Rakhmanov Akram</p>-->
+</div>
+</footer>
+<!-- ORDER MODAL -->
+<div aria-hidden="true" class="modal" id="modal__order__window" inert="">
+<div class="modal__overlay close-modal-overlay"></div>
+<div aria-labelledby="modal__title" aria-modal="true" class="modal__content" role="dialog">
+<button aria-label="Close" class="modal__close close-modal">×</button>
+<div class="modal__header">
+<span class="section__tag" data-i18n="modal_tag">Let's talk</span>
+<h2 data-i18n="modal_title" id="modal__title">Start Your Project</h2>
+<p data-i18n="modal_sub">Fill in the details and I'll get back to you within 24 hours.</p>
+</div>
+<form class="order__form" id="order__form" novalidate="">
+<div class="form__row">
+<div class="form__group">
+<label for="client__lname">Last Name <span class="optional">(optional)</span></label>
+<input autocomplete="family-name" id="client__lname" name="client__lname" placeholder="Rakhmanov" type="text"/>
+</div>
+<div class="form__group required">
+<label for="client__fname">First Name <span class="required__mark">*</span></label>
+<input autocomplete="given-name" id="client__fname" name="client__fname" placeholder="Akram" required="" type="text"/>
+</div>
+</div>
+<div class="form__group">
+<label for="client__mname">Middle Name <span class="optional">(optional)</span></label>
+<input autocomplete="additional-name" id="client__mname" name="client__mname" placeholder="Aliyevich" type="text"/>
+</div>
+<div class="form__row">
+<div class="form__group required">
+<label>Phone Number <span class="required__mark">*</span></label>
+<div class="phone__picker" id="phone__picker">
+<button aria-expanded="false" aria-haspopup="listbox" class="phone__flag__btn" id="phone__flag__btn" type="button">
+<span class="phone__flag" id="phone__flag"></span>
+<span class="phone__dial" id="phone__dial">+998</span>
+<svg class="phone__chevron" height="6" viewbox="0 0 10 6" width="10"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</button>
+<input autocomplete="tel" data-i18n-placeholder="form_phone_ph" id="client__phone" name="client__phone" placeholder="90 123 45 67" required="" type="tel"/>
+<input id="client__phone__full" type="hidden"/>
+<!-- Dropdown -->
+<div aria-label="Select country code" class="phone__dropdown" id="phone__dropdown" role="listbox">
+<div class="phone__search__wrap">
+<svg fill="none" height="14" viewbox="0 0 20 20" width="14"><circle cx="9" cy="9" r="6" stroke="#888" stroke-width="1.8"></circle><path d="M13.5 13.5L17 17" stroke="#888" stroke-linecap="round" stroke-width="1.8"></path></svg>
+<input autocomplete="off" class="phone__search" id="phone__search" placeholder="Country code or name…" type="text"/>
+</div>
+<ul class="phone__list" id="phone__list"></ul>
+</div>
+</div>
+</div>
+<div class="form__group">
+<label for="client__email">Email <span class="optional">(optional)</span></label>
+<input autocomplete="email" data-i18n-placeholder="form_email_ph" id="client__email" name="client__email" placeholder="you@example.com" type="email"/>
+</div>
+</div>
+<div class="form__group required">
+<label for="project__type">Project Type <span class="required__mark">*</span></label>
+<select id="project__type" name="project__type" required="">
+<option disabled="" selected="" value="">Select a type…</option>
+<option value="commercial">Commercial</option>
+<option value="small_business">Small Business</option>
+<option value="medium_business">Medium Business</option>
+<option value="large_business">Large Business</option>
+<option value="government">Government</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="form__group">
+<label for="project__description">Description <span class="optional">(optional)</span></label>
+<textarea id="project__description" name="project__description" placeholder="Tell me about your project, goals, and timeline…" rows="4"></textarea>
+</div>
+<button class="btn btn--full" data-cursor-color="#FDC435" data-i18n="form_submit" type="submit">Send Request</button>
+<p class="form__note">* Required fields</p>
+</form>
+</div>
+</div>
+<!-- SUCCESS TOAST -->
+<div aria-live="polite" class="success__toast" id="success__toast">
+<div class="success__toast__inner">
+<div class="success__icon">✓</div>
+<div class="success__toast__text">
+<h3>Request Sent!</h3>
+<p>Thank you! I'll be in touch within 24 hours.</p>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="cursor" id="cursor"></div><script src="https://unpkg.com/scrollreveal"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/portfolio-modal.js"></script>
+</body>
+</html>
