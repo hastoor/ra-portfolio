@@ -385,6 +385,22 @@ document.addEventListener('keydown', (e) => {
 const orderForm   = document.getElementById('order__form');
 const successToast = document.getElementById('success__toast');
 
+
+// API base (local + production)
+// - You can override manually by setting `window.API_BASE = "https://..."` before this script runs.
+const API_BASE = (() => {
+	if (typeof window !== "undefined" && window.API_BASE && typeof window.API_BASE === "string") {
+		return window.API_BASE.replace(/\/$/, "");
+	}
+
+	const h = location.hostname;
+	// Local dev
+	if (h === "localhost" || h === "127.0.0.1") return "http://localhost:3000";
+
+	// Production (Render)
+	return "https://ra-portfolio.onrender.com";
+})();
+
 function showToast() {
 	successToast.classList.remove('hiding');
 	successToast.classList.add('visible');
@@ -472,7 +488,7 @@ orderForm.addEventListener('submit', async (e) => {
 	submitBtn.textContent = t('sending');
 
 	try {
-		const res = await fetch('http://localhost:3000/api/order', {
+		const res = await fetch(`${API_BASE}/api/order`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(payload),
